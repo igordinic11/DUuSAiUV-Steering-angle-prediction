@@ -97,7 +97,7 @@ def draw_steering_overlay(frame: np.ndarray, angle: float) -> np.ndarray:
     _draw_steering_wheel(out, cx, cy, radius, angle_deg, colour)
 
     # Degree text
-    text = f"{angle_deg:+.1f}°"
+    text = f"{angle_deg:+.1f} deg"
     font = cv2.FONT_HERSHEY_SIMPLEX
     font_scale = 0.45
     thickness = 1

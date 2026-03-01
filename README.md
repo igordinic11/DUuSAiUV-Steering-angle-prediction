@@ -104,6 +104,8 @@ cd project
 ```bash
 cd project
 ./setup.sh
+# In case the virtual environment is not activated after the setup script, run:
+source venv/bin/activate
 ```
 
 Both scripts create a virtual environment, activate it, and install all dependencies from `requirements.txt`.
