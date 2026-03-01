@@ -153,7 +153,7 @@ def run_inference(
             if video_writer is None:
                 h, w = annotated.shape[:2]
                 vid_path = os.path.join(config.OUTPUT_DIR, "prediction.mp4")
-                video_writer = make_video_writer(vid_path, fps=20.0, width=w, height=h)
+                video_writer = make_video_writer(vid_path, fps=config.FPS, width=w, height=h)
             video_writer.write(annotated)
 
         if show_live:

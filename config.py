@@ -88,3 +88,8 @@ LANE_CHANGE_SUSTAINED_FRAMES = 5
 # Angle thresholds for colour coding the arrow overlay
 VIS_STRAIGHT_THRESH = 0.1   # |angle| < this  -> green
 VIS_MODERATE_THRESH = 0.4   # |angle| < this  -> yellow, else red
+
+# ------------------------ #
+# --- Video Generation --- #
+# ------------------------ #
+FPS = 25.0
