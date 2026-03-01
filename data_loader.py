@@ -31,6 +31,8 @@ def fix_path(raw: str) -> str:
         Absolute path to the image file in IMG_DIR
     """
     fname = raw.strip()
+    # Handle both Windows and Unix paths
+    fname = fname.replace("\\", "/")
     # Take only the filename part after the last separator
     basename = os.path.basename(fname)
     return os.path.join(IMG_DIR, basename)
